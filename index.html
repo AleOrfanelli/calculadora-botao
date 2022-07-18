@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="corpo">
+        <div class="calculadora">
+            <h1>CALCULADORA</h1>
+            <div class="result-limpar">
+                <div id="resultado"></div>
+                <button class="bttn-limp" onclick="limpar()">C</button>
+            </div>
+            <div class="linha">
+                <button class="bttn" onclick="inserir('9')">7</button>
+                <button class="bttn" onclick="inserir('8')">8</button>
+                <button class="bttn" onclick="inserir('7')">9</button>
+                <button class="bttn" id="botao" onclick="inserir('+')">+</button>
+            </div>
+            <div class="linha">
+                <button class="bttn" onclick="inserir('4')">4</button>
+                <button class="bttn" onclick="inserir('5')">5</button>
+                <button class="bttn" onclick="inserir('6')">6</button>
+                <button class="bttn" id="botao" onclick="inserir('-')">-</button>
+            </div>
+            <div class="linha">
+                <button class="bttn" onclick="inserir('1')">1</button>
+                <button class="bttn" onclick="inserir('2')">2</button>
+                <button class="bttn" onclick="inserir('3')">3</button>
+                <button class="bttn" id="botao" onclick="inserir('*')">*</button>
+            </div>
+            <div class="linha">
+                <button class="bttn" onclick="inserir('.')">.</button>
+                <button class="bttn" onclick="inserir('0')">0</button>
+                <button class="bttn" id="botao-igual" onclick="calcular()">=</button>
+                <button class="bttn" id="botao" onclick="inserir('/')">/</button>
+            </div>
+
+        </div>
+    </section>
+    <h1>Feita por Alejandro Orfanelli Salgado Rodriguez</h1>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
